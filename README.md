@@ -14,6 +14,7 @@ http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.
 2) This code only adds this beautiful Ajax WebGrid to your existing MVC project, replacing the Table in the "Index" View.
 
 3) The style uses the jQueryUI Theme "Pepper Grinder" :  <a href="http://jqueryui.com/themeroller/"   target="_self"  >jQueryUI</a>
+
 Not all of the theme files are necessary for the project. See the list of required files in <a href="http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.html" imageanchor="1" target="_self" style="margin-left: 1em; margin-right: 1em;">this</a> post.
 
 <a href="http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.html" imageanchor="1" target="_self" style="margin-left: 1em; margin-right: 1em;">
