@@ -1,0 +1,37 @@
+@model IEnumerable<AdvancedMVC.Models.Blog>
+
+@{
+    ViewBag.Title = "Grid";
+}
+
+<h2>Grid</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@{ var grid = new WebGrid(Model, new  []{ "Title", "MainPicture"},rowsPerPage: 2, ajaxUpdateContainerId:"gridDIV"); }
+
+<link href="~/Content/index.css" rel="stylesheet" />
+
+
+<div id="gridDIV">
+@grid.GetHtml(tableStyle:"webgrid-table",headerStyle:"webgrid-header",
+
+    columns: new[] {
+
+        grid.Column("ID",format:(item) =>  item.GetSelectLink(item.BlogID.ToString()) ) ,
+        grid.Column("Title",format:@<a href='/Blog/Comments/@item.BlogID'><b>@item.Title</b></a>),
+        //grid.Column("Text",format:@<a href='/Blog/Comments/@item.BlogID'><i>@item.Text</i></a>),
+        grid.Column("Picture",format:(item) =>
+        { return new MvcHtmlString("<a href='/Blog/Comments/" + item.BlogID +
+            "'><img src='/Images/"+item.MainPicture+"' style='width:100px;height:100px;'></img></a>");
+        }),
+  
+        grid.Column(
+            format:@<div class="ActionsTH">
+            @Html.ActionLink("Edit", "Edit", new { id=item.BlogID })
+            @Html.ActionLink("Details", "Details", new { id=item.BlogID })
+            @Html.ActionLink("Delete", "Delete", new { id=item.BlogID })
+        </div>)
+    })
+</div>
