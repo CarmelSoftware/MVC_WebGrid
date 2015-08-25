@@ -21,7 +21,7 @@
 
         grid.Column("ID",format:(item) =>  item.GetSelectLink(item.BlogID.ToString()) ) ,
         grid.Column("Title",format:@<a href='/Blog/Comments/@item.BlogID'><b>@item.Title</b></a>),
-        grid.Column("DatePosted","DatePosted", (item) => String.Format("{0:dd/MM/yyyy}", item.DatePosted)),
+        grid.Column("DatePosted","DatePosted", (item) => String.Format("{0:dd/MM/yyyy}", item.DatePosted != null ? item.DatePosted : DateTime.Now )),
         grid.Column("Picture",format:(item) =>
         { return new MvcHtmlString("<a href='/Blog/Comments/" + item.BlogID +
             "'><img src='/Images/"+item.MainPicture+"' style='width:100px;height:100px;'></img></a>");
