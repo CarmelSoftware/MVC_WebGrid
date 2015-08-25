@@ -7,16 +7,16 @@ MVC Building Blocks : Ajax WebGrid with Sorting &amp; Paging
 This is the companion code for the following Tutorials:
 
 http://themvcclub.blogspot.co.il/2014/03/step-by-step-how-to-create-ajax-webgrid.html
-
+http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.html
 
 1) This repository includes only the code for the WebGrid as seen in the pictures below, and the CSS style.
 
 2) This code only adds this beautiful Ajax WebGrid to your existing MVC project, replacing the Table in the "Index" View.
 
-3) The style uses the jQueryUI Theme "Overcast" :  <a href="http://jqueryui.com/themeroller/"   target="_self"  >jQueryUI</a>
-Not all of the theme files are necessary for the project. See the list of files in this post.
+3) The style uses the jQueryUI Theme "Pepper Grinder" :  <a href="http://jqueryui.com/themeroller/"   target="_self"  >jQueryUI</a>
+Not all of the theme files are necessary for the project. See the list of required files in <a href="http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.html" imageanchor="1" target="_self" style="margin-left: 1em; margin-right: 1em;">this</a> post.
 
-<a href="http://themvcclub.blogspot.co.il/2014/03/step-by-step-how-to-create-ajax-webgrid.html" imageanchor="1" target="_self" style="margin-left: 1em; margin-right: 1em;">
+<a href="http://themvcclub.blogspot.com/2015/08/mvc-ajax-webgrid-with-sorting-and-paging.html" imageanchor="1" target="_self" style="margin-left: 1em; margin-right: 1em;">
 
 
 
