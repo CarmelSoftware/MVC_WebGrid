@@ -4,12 +4,12 @@
     ViewBag.Title = "Grid";
 }
 
-<h2>Grid</h2>
+<h2>CarmelSoft Ajax WebGrid</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-@{ var grid = new WebGrid(Model, new  []{ "Title", "MainPicture"},rowsPerPage: 2, ajaxUpdateContainerId:"gridDIV"); }
+@{ var grid = new WebGrid(Model, new[] { "Title", "DatePosted", "MainPicture" }, rowsPerPage: 3, ajaxUpdateContainerId: "gridDIV"); }
 
 <link href="~/Content/index.css" rel="stylesheet" />
 
@@ -21,7 +21,7 @@
 
         grid.Column("ID",format:(item) =>  item.GetSelectLink(item.BlogID.ToString()) ) ,
         grid.Column("Title",format:@<a href='/Blog/Comments/@item.BlogID'><b>@item.Title</b></a>),
-        //grid.Column("Text",format:@<a href='/Blog/Comments/@item.BlogID'><i>@item.Text</i></a>),
+        grid.Column("DatePosted","DatePosted", (item) => String.Format("{0:dd/MM/yyyy}", item.DatePosted)),
         grid.Column("Picture",format:(item) =>
         { return new MvcHtmlString("<a href='/Blog/Comments/" + item.BlogID +
             "'><img src='/Images/"+item.MainPicture+"' style='width:100px;height:100px;'></img></a>");
