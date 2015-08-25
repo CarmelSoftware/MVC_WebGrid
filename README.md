@@ -10,7 +10,9 @@ http://themvcclub.blogspot.co.il/2014/03/step-by-step-how-to-create-ajax-webgrid
 
 
 1) This repository includes only the code for the WebGrid as seen in the pictures below, and the CSS style.
+
 2) This code only adds this beautiful Ajax WebGrid to your existing MVC project, replacing the Table in the "Index" View.
+
 3) The style uses the jQueryUI Theme "Overcast" :  <a href="http://jqueryui.com/themeroller/"   target="_self"  >jQueryUI</a>
 Not all of the theme files are necessary for the project. See the list of files in this post.
 
