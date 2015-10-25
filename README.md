@@ -33,6 +33,9 @@ Not all of the theme files are necessary for the project. See the list of requir
 
 
 
+
+
+
 <div style="direction: rtl;">
 פיתוח: כרמל שוורצמן</div>
 
